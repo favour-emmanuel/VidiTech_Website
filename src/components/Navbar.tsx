@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full px-8 lg:px-20 lg:pt-7 pb-4 pt-5 sticky border-b border-b-appPurple/10 backdrop-blur-md">
+    <header className="w-full px-8 lg:px-20 lg:pt-7 pb-4 pt-5 sticky top-0 z-50 border-b border-b-appPurple/10 backdrop-blur-md">
       <nav className="w-full flex justify-between items-center">
         {/* logo */}
         <div>
@@ -25,17 +25,34 @@ const Navbar = () => {
         </div>
 
         {/* nav menus */}
-        <ul className="hidden lg:flex justify-center items-center gap-6 w-full text-base sm:text-sm text-appNavy">
+        <ul className="hidden lg:flex justify-center items-center gap-6 w-full text-base sm:text-[16.1px] text-appNavy">
           {navData.map((navLinks, index) => (
-            <li key={index}>
-              <Link to={navLinks.route}>{navLinks.title}</Link>
+            <li
+              key={index}
+              className="relative group py-3 hover:text-appPurple cursor-pointer"
+            >
+              <Link to={navLinks.route} className="">
+                {navLinks.title}
+              </Link>
+              <div className="dot group-hover:opacity-100 group-hover:scale-100"></div>
             </li>
           ))}
         </ul>
 
-        <button className="hidden lg:block text-base bg-appPurple py-2.5 rounded-lg px-2 max-w-[8rem] w-full text-white">
+        {/* <button className="hidden lg:block text-base bg-appPurple py-2.5 rounded-lg px-2 max-w-[8rem] w-full text-white">
           <Link to={"/contact-us"}>Contact</Link>
+        </button> */}
+
+        <button className="hidden lg:block relative text-base bg-appPurple py-2.5 rounded-lg px-2 max-w-[8rem] w-full text-white overflow-hidden group">
+          <Link
+            to={"/contact-us"}
+            className="relative z-10 group-hover:text-appPurple transition-colors duration-300"
+          >
+            Contact
+          </Link>
+          <span className="absolute inset-0 bg-appWhite scale-x-0 group-hover:scale-x-100 transform origin-left transition-transform duration-300 ease-in-out"></span>
         </button>
+
         {/* hamburger menu icon */}
         <span
           onClick={() => setNav(!nav)}

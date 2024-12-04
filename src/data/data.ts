@@ -25,3 +25,23 @@ export const navData: nav[] = [
     route: "/blog",
   },
 ];
+
+export interface projectCount {
+  nom: string;
+  desc: string;
+}
+
+export const projectCountData: projectCount[] = [
+  {
+    nom: "70+",
+    desc: "Projects Done",
+  },
+  {
+    nom: "50+",
+    desc: "Happy Clients",
+  },
+  {
+    nom: "98%",
+    desc: "Client Satisfaction Done",
+  },
+];
