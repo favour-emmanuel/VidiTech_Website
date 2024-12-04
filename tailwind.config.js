@@ -3,9 +3,13 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      fontFamily: {},
+      fontFamily: {
+        mulish: ["Mulish"],
+      },
       colors: {
         appNavy: "#0F172A",
+        appWhite: "#ececfa",
+        appPurple: "#651FFF",
       },
     },
   },
