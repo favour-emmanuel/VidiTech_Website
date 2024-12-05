@@ -65,7 +65,7 @@ export const serviceOfferData: serviceOffer[] = [
   },
   {
     image: "carbon:touch-interaction",
-    headline: "UI/UX",
+    headline: "UI/UX Design",
     text: "Our dedicated team develops UX/UI designs for all types of websites, SaaS, and web/mobile apps. We combine the latest UI/UX trends with our customers’ individual goals and needs to deliver intuitive, vibrant, and impactful designs that power up businesses.",
   },
   {
