@@ -11,17 +11,17 @@ const ServicesWeOffer = () => {
         </span>
       </div>
 
-      <div className="my-5 grid lg:grid-cols-3 md:grid-cols-2 md:gap-x-6 grid-cols-1 gap-y-5">
+      <div className="my-10 lg:my-12 grid lg:grid-cols-3 md:grid-cols-2 md:gap-x-6 grid-cols-1 gap-y-7">
         {serviceOfferData.map((data, index) => (
           <div
             key={index}
-            className="px-6 py-5 border border-white/30 rounded-lg bg-appWhite/5 backdrop-blur-2xl shadow-md hover:shadow-lg transition-shadow duration-300"
+            className="px-6 py-5 border border-appPurple/10 rounded-xl bg-[#3f334415] backdrop-blur-4xl shadow-md hover:shadow-lg transition-shadow duration-300"
           >
-            <img src="" alt="" className="w-16 h-16 mb-4 mx-auto" />
-            <h1 className="text-lg font-semibold text-center">
-              {data.headline}
-            </h1>
-            <p className="text-sm text-center mt-2">{data.text}</p>
+            <div className="max-w-[4rem] my-3">
+              <Icon icon={data.image} className="text-4xl text-[#a33af9]" />
+            </div>
+            <h3 className="text-[22px] font-bold">{data.headline}</h3>
+            <p className="text-base font-light mt-2">{data.text}</p>
           </div>
         ))}
       </div>
