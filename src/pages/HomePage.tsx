@@ -1,5 +1,6 @@
 import Hero from "../components/Hero";
 import ServicesWeOffer from "../components/ServicesWeOffer";
+import WhatWeveDone from "../components/WhatWeveDone";
 import WhoWeAreSection from "../components/WhoWeAreSection";
 
 const HomePage = () => {
@@ -8,6 +9,7 @@ const HomePage = () => {
       <Hero />
       <WhoWeAreSection />
       <ServicesWeOffer />
+      <WhatWeveDone />
     </>
   );
 };

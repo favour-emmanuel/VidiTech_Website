@@ -1,3 +1,5 @@
+import assets from "../../public/assets/images";
+
 export interface nav {
   title: string;
   route: string;
@@ -82,5 +84,33 @@ export const serviceOfferData: serviceOffer[] = [
     image: "ri:line-chart-line",
     headline: "Business Strategy",
     text: "At Jodna, we deliver actionable strategies that capitalize on opportunities and navigate challenges for business growth.",
+  },
+];
+
+export interface whatWeveDone {
+  img: string;
+  title: string;
+  subtitle: string;
+  frameWork: string;
+}
+
+export const whatWeveDoneData = [
+  {
+    img: assets.project1,
+    title: "Custom CRM Development",
+    subTitle: "Web Development",
+    frameWork: ["MySQL", "Laraval", "Node.js"],
+  },
+  {
+    img: assets.project2,
+    title: "Mobile App for FitTrack",
+    subTitle: "Mobile Development",
+    frameWork: ["React Native", "Firebase", "Redux"],
+  },
+  {
+    img: assets.project3,
+    title: "Brand Identity for Google",
+    subTitle: "Branding",
+    frameWork: ["Adobe Creative Suite", "Figma", "Photoshop"],
   },
 ];
