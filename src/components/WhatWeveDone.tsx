@@ -38,7 +38,7 @@ const WhatWeveDone = () => {
               <div className="mt-2 flex gap-2 flex-wrap">
                 {item.frameWork.map((fw, index) => (
                   <span
-                    className="bg-appWhite py-2 px-3 text-[#a33af9] text-sm rounded-full"
+                    className="bg-appWhite py-2 px-3 text-[#8c29dd] text-sm rounded-full"
                     key={index}
                   >
                     {fw}
